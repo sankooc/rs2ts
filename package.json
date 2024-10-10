@@ -1,0 +1,20 @@
+{
+  "name": "rs2ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rs2ts": "./index.js"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "jinx-rust": "^0.1.6",
+    "typescript": "^5.6.3"
+  }
+}
