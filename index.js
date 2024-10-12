@@ -38,7 +38,6 @@ const options = program.opts();
 if(options.in && options.out) {
   const content = fs.readFileSync(options.in).toString();
   const items = read(content);
-  // console.log(items[0]);
   const result = build(items);
   fs.writeFileSync(options.out, result);
 }
