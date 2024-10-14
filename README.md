@@ -8,10 +8,11 @@ from rust
 ``` rust
 
 #[derive(Serialize,Default)]
-pub struct Cons{
-    pub source_ip: String,
-    pub count: u16,
-    pub throughput: u32,
+pub struct Connect<T> {
+    index: usize,
+    source: String,
+    target: String,
+    list: Vec<T>,
 }
   
 
@@ -27,12 +28,14 @@ to ts
 
 ``` typescript
 
-export interface Cons {
-    source_ip: string;
-    count: number;
-    throughput: number;
+export interface IConnect<T> {
+    index: number;
+    source: string;
+    target: string;
+    list: T[];
 }
-export interface Cons2 {
+
+export interface ICons2 {
     source_ip: string[];
     count: number;
 }
